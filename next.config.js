@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['miro.medium.com', 'cdn.freebiesupply.com'],
+    domains: ['miro.medium.com', 'cdn.freebiesupply.com', 'cdn.sanity.io'],
   },
 };
 
