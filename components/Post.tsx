@@ -6,7 +6,7 @@ interface Props {
   post: Post;
 }
 
-const Post = ({ post }: Props) => {
+const PostCard = ({ post }: Props) => {
   return (
     <div className="group border rounded-sm overflow-hidden">
       <img
@@ -33,4 +33,4 @@ const Post = ({ post }: Props) => {
   );
 };
 
-export default Post;
+export default PostCard;

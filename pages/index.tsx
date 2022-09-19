@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import PostItem from '../components/Post';
+import PostCard from '../components/Post';
 import { sanityClient } from '../sanity';
 import { Post } from '../typings';
 
@@ -26,7 +26,7 @@ export default function Home({ posts }: Props) {
         {posts.map((post) => (
           <Link key={post._id} href={`/post/${post.slug.current}`}>
             <a>
-              <PostItem post={post} />
+              <PostCard post={post} />
             </a>
           </Link>
         ))}
